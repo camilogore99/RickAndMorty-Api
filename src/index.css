@@ -15,5 +15,12 @@ body {
 .father {
   display: flex;
   border: solid white;
-  padding: 10px;
+  padding: 20px;
+}
+.image {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F60f604fdef85f7c5fd41663773acafcf%2Ftenor.gif%3Fitemid%3D17272801&f=1&nofb=1);
+  background-size: cover;
+}
+.info-card {
+  padding-left: 20px;
 }

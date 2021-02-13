@@ -4,17 +4,17 @@ const ResidentInfo = () => {
       return (
             <div classname="card col-md-6">
                   <div className="card-body col-md-6">
-                        <div className="father col-md-6">
-                        <div className="col-md-6">
+                        <div className="father col-md-12">
+                        <div className=" image col-md-6">
                               aqui va la imagen 
                         </div>
-                        <div className ="col-md-6">
-                              <span>Gonorrhea</span>
-                              <h4> dead-human</h4>
-                              <span>Last known location</span>
-                              <span>Anatomy park </span>
-                              <span>first seen </span>
-                              <span>anatomy park </span>
+                        <div className ="info-card col-md-6">
+                              <h2>Gonorrhea</h2>
+                              <h6> dead-human</h6>
+                              <p>Last known location</p>
+                              <p>Anatomy park </p>
+                              <p>first seen </p>
+                              <p>anatomy park </p>
                         </div>
                         </div>
                   </div>
