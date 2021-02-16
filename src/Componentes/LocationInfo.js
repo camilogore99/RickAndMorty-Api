@@ -1,10 +1,7 @@
 const LocationInfo = ( {data} ) => {
-      if (data) {
-            console.log(data.name);
-      }
       return(
             <>
-            {data &&
+            {/* {data &&
                  data.map( (dat)=>{
                        return(
                              <div className="card-info-planet">
@@ -14,7 +11,7 @@ const LocationInfo = ( {data} ) => {
                              </div>
                        )
                  } )
-            }
+            } */}
             </>
       )
 }
