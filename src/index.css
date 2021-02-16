@@ -18,9 +18,19 @@ body {
   padding: 20px;
 }
 .image {
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F60f604fdef85f7c5fd41663773acafcf%2Ftenor.gif%3Fitemid%3D17272801&f=1&nofb=1);
+  width: 100%;
   background-size: cover;
+  overflow: hidden;
 }
 .info-card {
   padding-left: 20px;
+}
+.card-info-planet {
+  background-color: sienna;
+  height: 110px;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 190px;
 }

@@ -1,8 +1,12 @@
+import LocationInfo from "./LocationInfo";
 import ResidentInfo from "./ResidentInfo"
 
 const SearchBox = () => {
       return (
             <>
+            <div className="header">
+            <LocationInfo />
+            </div>
             <div className="main">
             <h1 className="title">Rick And Morty Api</h1>
             <input />
