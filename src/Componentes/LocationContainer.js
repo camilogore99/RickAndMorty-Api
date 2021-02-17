@@ -4,7 +4,7 @@ export const LocationContainer = ( { residents } ) => {
             { residents &&
                   residents.map( ( res ) => {
                         return(
-                              <>
+                              <div className="display-flex">
                               <div classname="card col-sm-4 col-md-6 col-lg-6">
                                  <div className="card-body col-md-6">
                                        <div className="row col-md-12">
@@ -18,11 +18,11 @@ export const LocationContainer = ( { residents } ) => {
                                                      <p> Location: { res.locationname } </p>
                                                      <p>first seen </p>
                                                      <p>anatomy park </p>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                              </>
+                                           </div>
+                                      </div>
+                                </div>
+                          </div>
+                     </div>
                         )
                   } )
             }
