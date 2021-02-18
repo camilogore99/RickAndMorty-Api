@@ -1,15 +1,16 @@
 export const LocationContainer = ( { residents } ) => {
       return(
             <>
+            <div className="row">
             { residents &&
                   residents.map( ( res ) => {
                         return(
-                              <div className="display-flex">
-                              <div classname="card col-sm-4 col-md-6 col-lg-6">
-                                 <div className="card-body col-md-6">
-                                       <div className="row col-md-12">
-                                             <div className="col-md-6">
-                                                   <img className="image" alt=""src={res.image}></img>
+                              
+                              <div classname="row card col-sm-4 col-md-6 col-lg-6">
+                                 {/* <div className="card-body col-md-12"> */}
+                                       <div className="row  marg col-md-12 col-lg-12" >
+                                             <div className="col-md-6" >
+                                                   <img  style={{width: '100%'}} className="image" alt=""src={res.image}/>
                                             </div>
                                             <div className ="info-card col-md-6">
                                                     <h2>{ res.name }</h2>
@@ -20,12 +21,13 @@ export const LocationContainer = ( { residents } ) => {
                                                      <p>anatomy park </p>
                                            </div>
                                       </div>
-                                </div>
+                                {/* </div> */}
                           </div>
-                     </div>
+                    
                         )
                   } )
-            }
+            } 
+            </div>
             </>
 
       )

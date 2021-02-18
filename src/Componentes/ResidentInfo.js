@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import LocationInfo from './LocationInfo';
 import ResidentContainer from './ResidentContainer';
 
-const ResidentInfo = () => {
+const ResidentInfo = ( { value } ) => {
+
       const [ date, setDate ] = useState( [] ) 
       const url = ` https://rickandmortyapi.com/api/location`;
 
@@ -11,10 +12,14 @@ const ResidentInfo = () => {
             const data = await response.json();
             setDate(data)
       }
-      Apiasync()
+      
+      useEffect(()=>{
+            Apiasync()
+      },[]);
+
       return (
             <>
-            <ResidentContainer date={ date } />
+            <ResidentContainer value={ value }  date={ date } />
             <LocationInfo data={ date } />
             </>
       )
